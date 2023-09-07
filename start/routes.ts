@@ -20,11 +20,11 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async ({ inertia }) => {
+/*Route.get('/', async ({ inertia }) => {
   return inertia.render('auth/login', { someData: 'login' })
-})
+})*/
 
-Route.get('/dashboard', async ({ inertia }) => {
+Route.get('/', async ({ inertia }) => {
   return inertia.render('dashboard', { dashboard: 'dashboard' })
 })
 

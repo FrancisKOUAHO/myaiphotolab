@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const DragDrop = ({ onImageUpload }) => {
   const [image, setImage] = useState(null)
 
-  const handleFileChange = (event) => {
+  const handleFileChange = (event: { target: any }) => {
     const fileInput = event.target
     const selectedFile = fileInput.files[0]
 
