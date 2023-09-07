@@ -19,9 +19,15 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
-import Logger from '@ioc:Adonis/Core/Logger'
+
+/*Route.get('/', async ({ inertia }) => {
+  return inertia.render('auth/login', { someData: 'login' })
+})*/
 
 Route.get('/', async ({ inertia }) => {
-  Logger.debug('hit /test')
-  return inertia.render('Home', { someData: 'hello' })
+  return inertia.render('dashboard', { dashboard: 'dashboard' })
+})
+
+Route.get('/image', async ({ inertia }) => {
+  return inertia.render('dashboard/image')
 })
